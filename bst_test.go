@@ -4,8 +4,8 @@ import (
 	"log"
 	"testing"
 
-	"github.com/strcutx/structs"
 	"github.com/stretchr/testify/suite"
+	"github.com/structx/structs"
 )
 
 type BSTSuite struct {

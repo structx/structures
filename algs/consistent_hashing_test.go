@@ -3,8 +3,8 @@ package algs_test
 import (
 	"testing"
 
-	"github.com/strcutx/structs/algs"
 	"github.com/stretchr/testify/suite"
+	"github.com/structx/structs/algs"
 )
 
 type ConsistentHashingWeightlessSuite[T uint64] struct {

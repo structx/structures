@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"hash/fnv"
 
-	"github.com/strcutx/structs"
+	"github.com/structx/structs"
 )
 
 // ConsistentHashRingWeightless consistent hashing ring with no weights

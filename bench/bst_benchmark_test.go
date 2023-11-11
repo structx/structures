@@ -3,7 +3,7 @@ package bench
 import (
 	"testing"
 
-	"github.com/strcutx/structs"
+	"github.com/structx/structs"
 )
 
 var (

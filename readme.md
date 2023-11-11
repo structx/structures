@@ -9,13 +9,15 @@ For example the `ConsistentHashRingWeightless` uses the `BST` for a quick lookup
 ## Usage
 
 ```bash
-go get github.com/structx/structures
+go get github.com/structx/structs
 ```
 
 ## Docs
 
 This package has a wiki page to provide documentation on each data structure and algorithm. This repository is a learning opportunity for me
 so I will do my best to explain the structs and algs. 
+
+[Wiki](https://github.com/structx/structures/wiki)
 
 ## Examples
 
@@ -27,10 +29,12 @@ please view source code under `/examples` to see how to implement a binary searc
     tree := structs.NewBST()
 
     // add node to tree
-    tree.AddNodeInt64(1) // will add a single node to the tree
+    tree.AddNodeInt64(1)
 
-    // you can remove and find closest node
+    // find closest node to value (highest)
     tree.FindClosestInt64(2)
+
+    // remove node from tree
     tree.DeleteInt64(1)
 ```
 
