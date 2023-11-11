@@ -4,7 +4,7 @@ package examples
 import (
 	"fmt"
 
-	"github.com/strcutx/structs"
+	"github.com/structx/structs"
 )
 
 // ExampleBst example binary search tree

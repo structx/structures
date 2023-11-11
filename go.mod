@@ -1,4 +1,4 @@
-module github.com/strcutx/structs
+module github.com/structx/structs
 
 go 1.21.3
 
