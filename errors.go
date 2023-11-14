@@ -1,6 +1,8 @@
 package structs
 
-import "fmt"
+import (
+	"fmt"
+)
 
 // ErrNotFound node not found
 type ErrNotFound[T int | int64 | int32 | uint | uint8 | uint32 | uint64] struct {
@@ -19,5 +21,5 @@ type ErrNotInitialized struct {
 
 // Error stringify error message
 func (eni *ErrNotInitialized) Error() string {
-	return fmt.Sprint("root not is not initalized add values to structure before calling queries/mutations")
+	return "root not is not initalized add values to structure before calling queries/mutations"
 }

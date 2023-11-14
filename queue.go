@@ -7,7 +7,7 @@ import (
 )
 
 // Queue queue
-type Queue[T int8 | int64 | string] struct {
+type Queue[T int8 | int64] struct {
 	index, size *atomic.Int64
 	store       Store[T]
 }
@@ -45,24 +45,6 @@ func MustNewQueueInt64[T int64]() *Queue[T] {
 		index: &atomic.Int64{},
 		size:  &atomic.Int64{},
 		store: newQueueStoreInt64[T](),
-	}
-}
-
-// MustNewQueueString retruns new queue with string store
-func MustNewQueueString[T string]() *Queue[T] {
-	return &Queue[T]{
-		index: &atomic.Int64{},
-		size:  &atomic.Int64{},
-		store: newQueueStoreString[T](),
-	}
-}
-
-// NewQueueString retruns new queue with string store
-func NewQueueString[T string](store Store[T]) *Queue[T] {
-	return &Queue[T]{
-		index: &atomic.Int64{},
-		size:  &atomic.Int64{},
-		store: store,
 	}
 }
 
