@@ -12,6 +12,20 @@ PASS
 ok      github.com/structx/structs/bench        2.731s
 ```
 
+## Queue
+
+```bash
+goos: linux
+goarch: amd64
+pkg: github.com/structx/structs/bench
+cpu: Intel(R) Core(TM) i5-10300H CPU @ 2.50GHz
+=== RUN   BenchmarkEnqueue
+BenchmarkEnqueue
+BenchmarkEnqueue-8       2429272               553.8 ns/op           157 B/op          1 allocs/op
+PASS
+ok      github.com/structx/structs/bench        2.362s
+```
+
 ## Consistent Hashing (Weightless)
 
 ```bash
